@@ -13,9 +13,6 @@ public class Task1 {
         System.out.println(Arrays.binarySearch(array, x) >= -20);
 
         System.out.println(findDeclarative(array, x));
-        //---------------
-        System.out.println(task2(array));
-
     }
 
     // Task 1
@@ -32,49 +29,8 @@ public class Task1 {
     public static int findDeclarative(int[] intArray, int searchNumber) {
         return Arrays.binarySearch(intArray, searchNumber);
     }
-
-
-    // Task 2
-
-    public static List task2(int []arr){
-        List newArray = new ArrayList<>();
-        int coutnPositive = 0;
-        int coutnZero = 0;
-        int coutnNegative = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > 0){
-                coutnPositive++;
-            }
-            if (arr[i] == 0){
-                coutnZero++;
-            }
-            if (arr[i] < 0){
-                coutnNegative++;
-            }
-        }
-        newArray.add(coutnPositive);
-        newArray.add(coutnNegative);
-        newArray.add(coutnZero);
-        return newArray;
-    }
-
-//    public static List task2_1(int []arr){
-//        int coutnPositive = 0;
-//        int coutnZero = 0;
-//        int coutnNegative = 0;
-//
-//        Arrays.sort(arr);
-//        for (int i = 0; i < arr.length; i++) {
-//
-//        }
-//
-//    }
-
-
-
-
-
 }
+
 //public class Main {
 //    public static void main(String[] args) {
 //        System.out.println("seminarOne");

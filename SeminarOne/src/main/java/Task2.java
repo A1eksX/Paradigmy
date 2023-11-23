@@ -37,11 +37,4 @@ public class Task2 {
         newArray.add((coutnZero / total));
         return newArray;
     }
-
-//    public static List task2_1(int []arr){
-//        int coutnPositive = 0;
-//        int coutnZero = 0;
-//        int coutnNegative = 0;
-//    }
-
 }
