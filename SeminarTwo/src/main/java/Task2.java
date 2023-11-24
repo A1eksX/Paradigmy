@@ -6,7 +6,7 @@
  */
 public class Task2 {
     public static void main(String[] args) {
-        int n = 1000;
+        int n = 15;
         int base = 16;
         System.out.println(task2(n, base));
 
@@ -18,9 +18,6 @@ public class Task2 {
 
         while (n > 0){
             remains = n % base;
-            if (remains < 9){
-                builder.append(remains);
-            }
             if(remains > 9){ // 14 - E
                 remains = (char)(55 + remains); //(char)(65) - согласно табл ASCII это символ A. В данном примере если
                 // остаток от деления больше 9 (например 14), то согласно табл ASCII - 14 - это 55 + 14 = 69 - т.е. Е
@@ -28,6 +25,8 @@ public class Task2 {
                 // получить А, надо из 65 - 10. отсюда вылезает 55
                 char ch = (char) remains;
                 builder.append(ch);
+            }else {
+                builder.append(remains);
             }
             n /= base;
         }
