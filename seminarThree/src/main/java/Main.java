@@ -1,4 +1,3 @@
-import task1.Circle;
 import task1.Triangle;
 
 public class Main {
